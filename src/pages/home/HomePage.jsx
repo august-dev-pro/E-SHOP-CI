@@ -5,7 +5,6 @@ import Banner from "../../components/layouts/banner/Banner";
 import "./homePage.css";
 import Wrappers from "../../components/articles/Wrappers";
 import Asides from "../../components/articles/Asides";
-import CategoriesNavSlider from "../../components/layouts/sliders/CategoriesNavSlider";
 import Categories from "../../components/articles/Categories";
 
 const HomePage = () => {
