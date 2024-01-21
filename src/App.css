@@ -1,38 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;400;500;600;700;800;900&display=swap");
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+ul,
+ol,
+li,
+form,
+input,
+button {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Kanit", sans-serif !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+a,
+button {
+  border: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+a {
+  color: #000000;
+}
+/* container */
+.container {
+  padding: 0 80px;
+}
+/* button style */
+button {
+  background-color: #ff5e00;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: #d85205;
+}
+
+/* section title */
+.section_tile {
+  font-weight: bolder;
+  text-align: left;
+  font-size: 35px;
+}
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

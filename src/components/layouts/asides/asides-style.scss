@@ -1,0 +1,143 @@
+.aside {
+    border: 1px solid #b1b1b1;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 260px;
+    border-radius: .3rem;
+
+    .aside_header {
+        border-bottom: 1px solid #b1b1b1;
+        text-transform: uppercase;
+        font-weight: bolder;
+        padding: 15px 10px;
+        color: #2e2e2e;
+    }
+
+    .aside_content {
+        padding: 10px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.categories_aside {
+    .aside_content {
+        gap: 10px;
+
+        .chield {
+            display: flex;
+            align-items: center;
+
+            .title {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                text-transform: uppercase;
+                font-size: 13px;
+                color: #7a7a7a;
+                font-weight: 400;
+                transition: .3s;
+                //letter-spacing: .5px;
+            }
+
+            .title::before {
+                content: "";
+                padding: 3px;
+                border: 1px solid #b1b1b1;
+                border-radius: 50%;
+            }
+        }
+
+        .chield:hover {
+            .title {
+                color: #000000;
+            }
+
+            .title::before {
+                border: 1px solid #000000;
+                background-color: #000000;
+            }
+        }
+    }
+
+}
+
+/* nos bons plan asides */
+.aside2 {
+    .aside_content {
+        padding: 0px;
+        gap: 10px;
+        flex-direction: column-reverse;
+
+        .chield:hover {
+            .aside_article::after {
+                background-color: #001f4d23;
+            }
+
+            .aside_article {
+                .article_img {
+                    img {
+                        max-height: 90px;
+                    }
+                }
+
+            }
+        }
+
+        .chield {
+            display: flex;
+            height: 100px;
+
+            .aside_article {
+                display: flex;
+                padding: 5px 10px;
+                position: relative;
+                align-items: center;
+                gap: 7px;
+
+                .article_img {
+                    max-width: 40%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        transition: all .3s;
+                        max-width: 100%;
+                        max-height: 80px;
+                        object-fit: cover;
+                    }
+                }
+
+                .article_des {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .name {
+                        font-size: 15px;
+                        font-weight: 500;
+                    }
+
+                    .price {}
+                }
+            }
+
+            .aside_article::after {
+                transition: all .3s;
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                background-color: inherit;
+                height: 100px;
+                width: 260px;
+            }
+        }
+    }
+}

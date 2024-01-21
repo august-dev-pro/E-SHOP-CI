@@ -1,0 +1,27 @@
+/* .banner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+    overflow: hidden;
+    background: transparent;
+    opacity: 1;
+}
+ */
+.banner_section .banner {
+  height: 500px;
+}
+.banner_section .banner .slider {
+  height: 500px;
+}
+.banner_section .banner .slider img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=banner.css.map */

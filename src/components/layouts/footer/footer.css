@@ -1,0 +1,173 @@
+.footer {
+  padding: 20px 0;
+  background-color: #fff;
+}
+.footer .footer_container .footer_content {
+  display: flex;
+  gap: 20px;
+}
+.footer .footer_container .footer_content .footer_content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.footer .footer_container .footer_content .footer_content .about {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.footer .footer_container .footer_content .footer_content .about .description {
+  font-size: 14px;
+  font-weight: 300;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.footer .footer_container .footer_content .footer_content .about .description span {
+  color: red;
+}
+.footer .footer_container .footer_content .footer_content .about .social_links {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer_container .footer_content .footer_content .about .social_links .title {
+  width: -moz-max-content;
+  width: max-content;
+}
+.footer .footer_container .footer_content .footer_content .about .social_links .links {
+  display: flex;
+  gap: 30px;
+}
+.footer .footer_container .footer_content .footer_content .about .social_links .links a {
+  display: flex;
+  gap: 5px;
+}
+.footer .footer_container .footer_content .footer_content .about .social_links .links a .icon {
+  padding: 3px 10px;
+  align-items: center;
+  color: #fff;
+  transition: all 0.5s;
+}
+.footer .footer_container .footer_content .footer_content .about .social_links .links a:hover .icon {
+  border-radius: 50px;
+}
+.footer .footer_container .footer_content .footer_content .about .social_links .links .facebook .icon {
+  background-color: #1100ff;
+}
+.footer .footer_container .footer_content .footer_content .about .social_links .links .instagram .icon {
+  background-color: #00a2ff;
+}
+.footer .footer_container .footer_content .footer_content .about_info {
+  display: flex;
+  gap: 50px;
+}
+.footer .footer_container .footer_content .footer_content .about_info .field .title {
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.footer .footer_container .footer_content .footer_content .about_info .field .links {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 300;
+}
+.footer .footer_container .footer_content .footer_content .about_info .field .links a {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.footer .footer_container .footer_content .footer_content .about_info .field .links a .label {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer_container .footer_content .footer_content .about_info .field .links a .label::after {
+  content: "";
+  padding: 1px;
+  background-color: inherit;
+  width: 0%;
+  transition: all 0.5s;
+}
+.footer .footer_container .footer_content .footer_content .about_info .field .links a:hover {
+  color: red;
+}
+.footer .footer_container .footer_content .footer_content .about_info .field .links a:hover .label::after {
+  background-color: #ff0000;
+  width: 50%;
+}
+.footer .footer_container .footer_content .send_massage_form {
+  display: flex;
+  flex-direction: column;
+  background-color: #01132e;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: left;
+}
+.footer .footer_container .footer_content .send_massage_form .form_title {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  -webkit-text-decoration: double;
+          text-decoration: double;
+  margin-bottom: 10px;
+  width: -moz-max-content;
+  width: max-content;
+}
+.footer .footer_container .footer_content .send_massage_form .form_content {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer_container .footer_content .send_massage_form .form_content .field {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer_container .footer_content .send_massage_form .form_content .field textarea {
+  height: 100px;
+}
+.footer .footer_container .footer_content .send_massage_form .form_content .submite {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 10px;
+  padding: 3px 5px;
+  background-color: orangered;
+  border-radius: 0.2rem;
+  border: none;
+  transition: all 0.5s;
+  font-weight: 400;
+  font-size: 15px;
+}
+.footer .footer_container .footer_content .send_massage_form .form_content .submite:hover {
+  background-color: #ffa600;
+}
+
+.section_maker .container .content {
+  display: flex;
+  gap: 30px;
+}
+.section_maker .container .content .title {
+  font-weight: 300;
+  width: -moz-max-content;
+  width: max-content;
+}
+.section_maker .container .content .contact_link {
+  display: flex;
+  gap: 10px;
+}
+.section_maker .container .content .contact_link .chield {
+  display: flex;
+  gap: 5px;
+  width: -moz-max-content;
+  width: max-content;
+}
+.section_maker .container .content .contact_link :nth-child(1):hover {
+  color: #031d44;
+}
+.section_maker .container .content .contact_link :nth-child(2) .icon {
+  color: #006eff;
+}
+.section_maker .container .content .contact_link :nth-child(3) .icon {
+  color: #ff0000;
+}
+.section_maker .container .content .contact_link :nth-child(3):hover {
+  color: #ff0000;
+}/*# sourceMappingURL=footer.css.map */

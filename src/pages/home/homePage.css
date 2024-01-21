@@ -1,0 +1,20 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #f3f3f3;
+}
+.home .nosBonPlan_section .nosBonPlan_container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.home .nosBonPlan_section .nosBonPlan_container .nosBonPlan_content {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 50px;
+}
+.home .aside-block_wrapper-block .content_container {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=homePage.css.map */

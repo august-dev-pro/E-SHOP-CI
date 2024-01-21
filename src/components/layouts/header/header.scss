@@ -1,0 +1,176 @@
+/* header style scc */
+/* Ajoutez ces styles dans votre fichier CSS */
+
+.hidden {
+    display: none !important;
+}
+
+#scroll-nav-bar {
+    display: block;
+    position: fixed !important;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+    box-shadow: 1px 3px 1px 0px #dfdfdf;
+}
+
+.header {
+    .bar {
+        background-color: orangered;
+        padding: 15px 0;
+        color: #fff;
+        font-weight: bolder;
+    }
+
+    .header_content {
+        .content_container {
+            .content {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 25px 0;
+
+                #logo {
+                    font-weight: bolder;
+                    font-size: 20px;
+                }
+
+                .search_form {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    #search {
+                        width: 500px;
+                        border: .5px solid rgb(214, 206, 206);
+                        border-right: none;
+                        padding-left: 30px;
+                        border-top-left-radius: .3rem;
+                        border-bottom-left-radius: .3rem;
+                        height: 40px;
+                    }
+
+                    #submit {
+                        //background-color: orangered;
+                        border: none;
+                        width: 50px;
+                        border-top-right-radius: .3rem;
+                        border-bottom-right-radius: .3rem;
+                        border-top-left-radius: 0;
+                        border-bottom-left-radius: 0;
+                        height: 40px;
+                    }
+                }
+
+                .acunt-links {
+                    display: flex;
+                    font-size: 15px;
+                    font-weight: 700;
+                    gap: 30px;
+                    height: 40px;
+
+                    #accunt-link {
+                        color: #000000;
+                        display: flex;
+                        gap: 5px;
+                        font-size: 15px;
+                        font-weight: 700;
+                        color: #525050;
+                        padding: 0 10px;
+                        border: 2px solid #000000;
+                        align-items: center;
+                        border-radius: .3rem;
+                    }
+
+                    .panier {
+                        padding: 5px;
+                        background-color: #ff5e00;
+                        color: #fff;
+                        border-radius: .3rem;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .nav-bar {
+        .nav_container {
+            display: flex;
+            gap: 200px;
+            background-color: #f3f3f3;
+            align-items: center;
+
+            .biblio {
+                display: flex;
+                flex-direction: column;
+                gap: 3px;
+                padding: 15px;
+                background-color: #fff;
+                cursor: pointer;
+
+                span {
+                    padding: 1.5px;
+                    background-color: #ff5e00;
+                    width: 20px;
+                }
+            }
+
+            .biblio:hover {
+                span {
+                    background-color: #000000;
+                }
+            }
+
+            .links {
+                display: flex;
+                font-weight: bolder;
+                gap: 30px;
+
+                a {
+                    color: #303030;
+                    text-transform: uppercase;
+                }
+
+                .chield {
+                    padding: 14px;
+                    cursor: pointer;
+
+                }
+
+                .chield:hover {
+                    background-color: #fff;
+                    height: 100%;
+                    transition: all .5s;
+
+                    a {
+                        display: flex;
+                        flex-direction: column;
+
+                        span {
+                            display: flex;
+                            flex-direction: column;
+                        }
+
+                        span::after {
+                            content: "";
+                            width: 100%;
+                            padding: .5px;
+                            background-color: #303030;
+                        }
+
+                    }
+
+                }
+
+
+
+
+            }
+        }
+    }
+}

@@ -1,0 +1,221 @@
+.footer {
+    padding: 20px 0;
+    background-color: #fff;
+
+    .footer_container {
+        .footer_content {
+            display: flex;
+            gap: 20px;
+
+            .footer_content {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+
+                .about {
+                    display: flex;
+                    gap: 20px;
+                    flex-direction: column;
+
+                    .description {
+                        font-size: 14px;
+                        font-weight: 300;
+                        width: fit-content;
+
+                        span {
+                            color: red;
+                        }
+                    }
+
+                    .social_links {
+                        display: flex;
+                        flex-direction: column;
+
+                        .title {
+                            width: max-content;
+                        }
+
+                        .links {
+                            display: flex;
+                            gap: 30px;
+
+                            a {
+                                display: flex;
+                                gap: 5px;
+
+                                .icon {
+                                    padding: 3px 10px;
+                                    align-items: center;
+                                    color: #fff;
+                                    transition: all .5s;
+                                }
+                            }
+
+                            a:hover {
+                                .icon {
+                                    border-radius: 50px;
+                                }
+                            }
+
+                            .facebook {
+                                .icon {
+                                    background-color: #1100ff;
+                                }
+                            }
+
+                            .instagram {
+                                .icon {
+                                    background-color: #00a2ff;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .about_info {
+                    display: flex;
+                    gap: 50px;
+
+                    .field {
+                        .title {
+                            font-weight: 500;
+                            font-size: 18px;
+                            text-transform: uppercase;
+                        }
+
+                        .links {
+                            display: flex;
+                            flex-direction: column;
+                            font-size: 14px;
+                            font-weight: 300;
+
+                            a {
+                                width: fit-content;
+
+                                .label {
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+
+                                .label::after {
+                                    content: "";
+                                    padding: 1px;
+                                    background-color: inherit;
+                                    width: 0%;
+                                    transition: all .5s;
+                                }
+                            }
+
+
+                            a:hover {
+                                color: red;
+
+                                .label::after {
+                                    background-color: #ff0000;
+                                    width: 50%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .send_massage_form {
+                display: flex;
+                flex-direction: column;
+                background-color: #01132e;
+                width: fit-content;
+                color: #fff;
+                padding: 10px 20px;
+                text-align: left;
+
+                .form_title {
+                    font-size: 20px;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    text-decoration: double;
+                    margin-bottom: 10px;
+                    width: max-content;
+                }
+
+                .form_content {
+                    display: flex;
+                    flex-direction: column;
+
+                    .field {
+                        display: flex;
+                        flex-direction: column;
+
+                        textarea {
+                            height: 100px;
+                        }
+                    }
+
+                    .submite {
+                        width: fit-content;
+                        margin-top: 10px;
+                        padding: 3px 5px;
+                        background-color: orangered;
+                        border-radius: .2rem;
+                        border: none;
+                        transition: all .5s;
+                        font-weight: 400;
+                        font-size: 15px;
+                    }
+
+                    .submite:hover {
+                        background-color: #ffa600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section_maker {
+    .container {
+        .content {
+            display: flex;
+            gap: 30px;
+
+            .title {
+                font-weight: 300;
+                width: max-content;
+            }
+
+            .contact_link {
+                display: flex;
+                gap: 10px;
+
+                .chield {
+                    display: flex;
+                    gap: 5px;
+                    width: max-content;
+                }
+
+                :nth-child(1):hover {
+                    color: #031d44;
+                }
+
+
+                :nth-child(2) {
+                    .icon {
+                        color: #006eff;
+                    }
+                }
+
+
+                :nth-child(3) {
+                    .icon {
+                        color: #ff0000;
+                    }
+                }
+
+                :nth-child(3):hover {
+                    color: #ff0000;
+                }
+
+            }
+        }
+    }
+}

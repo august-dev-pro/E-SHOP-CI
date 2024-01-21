@@ -1,0 +1,111 @@
+.aside {
+  border: 1px solid #b1b1b1;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 260px;
+  border-radius: 0.3rem;
+}
+.aside .aside_header {
+  border-bottom: 1px solid #b1b1b1;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 15px 10px;
+  color: #2e2e2e;
+}
+.aside .aside_content {
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.categories_aside .aside_content {
+  gap: 10px;
+}
+.categories_aside .aside_content .chield {
+  display: flex;
+  align-items: center;
+}
+.categories_aside .aside_content .chield .title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #7a7a7a;
+  font-weight: 400;
+  transition: 0.3s;
+}
+.categories_aside .aside_content .chield .title::before {
+  content: "";
+  padding: 3px;
+  border: 1px solid #b1b1b1;
+  border-radius: 50%;
+}
+.categories_aside .aside_content .chield:hover .title {
+  color: #000000;
+}
+.categories_aside .aside_content .chield:hover .title::before {
+  border: 1px solid #000000;
+  background-color: #000000;
+}
+
+/* nos bons plan asides */
+.aside2 .aside_content {
+  padding: 0px;
+  gap: 10px;
+  flex-direction: column-reverse;
+}
+.aside2 .aside_content .chield:hover .aside_article::after {
+  background-color: rgba(0, 31, 77, 0.137254902);
+}
+.aside2 .aside_content .chield:hover .aside_article .article_img img {
+  max-height: 90px;
+}
+.aside2 .aside_content .chield {
+  display: flex;
+  height: 100px;
+}
+.aside2 .aside_content .chield .aside_article {
+  display: flex;
+  padding: 5px 10px;
+  position: relative;
+  align-items: center;
+  gap: 7px;
+}
+.aside2 .aside_content .chield .aside_article .article_img {
+  max-width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aside2 .aside_content .chield .aside_article .article_img img {
+  transition: all 0.3s;
+  max-width: 100%;
+  max-height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.aside2 .aside_content .chield .aside_article .article_des {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.aside2 .aside_content .chield .aside_article .article_des .name {
+  font-size: 15px;
+  font-weight: 500;
+}
+.aside2 .aside_content .chield .aside_article::after {
+  transition: all 0.3s;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: inherit;
+  height: 100px;
+  width: 260px;
+}/*# sourceMappingURL=asides-style.css.map */
