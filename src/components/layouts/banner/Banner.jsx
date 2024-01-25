@@ -22,18 +22,16 @@ const Banner = () => {
   };
   return (
     <section className="banner_section">
-      <animated.div style={props}>
-        <Slider className="slider" {...settings}>
-          {bannerData.map((element) => {
-            const imageUrl = `../../../../images/${element.image}`;
-            return (
-              <div className="slide">
-                <img id="img" src={imageUrl} alt="" />
-              </div>
-            );
-          })}
-        </Slider>
-      </animated.div>
+      <Slider className="slider" {...settings}>
+        {bannerData.map((element) => {
+          const imageUrl = `../../../../images/${element.image}`;
+          return (
+            <div className="slide">
+              <img id="img" src={imageUrl} alt="" />
+            </div>
+          );
+        })}
+      </Slider>
     </section>
   );
 };

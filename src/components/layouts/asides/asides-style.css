@@ -67,6 +67,7 @@
 .aside2 .aside_content .chield {
   display: flex;
   height: 100px;
+  width: 100% !important;
 }
 .aside2 .aside_content .chield .aside_article {
   display: flex;
@@ -107,5 +108,5 @@
   left: 0;
   background-color: inherit;
   height: 100px;
-  width: 260px;
+  width: 100%;
 }/*# sourceMappingURL=asides-style.css.map */

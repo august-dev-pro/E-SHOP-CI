@@ -13,6 +13,7 @@ function App() {
           <Route path="/" exact element={<HomePage />} />
         </Routes>
       </BrowserRouter>
+      {/* <HomePage /> */}
       <Footer />
     </div>
   );

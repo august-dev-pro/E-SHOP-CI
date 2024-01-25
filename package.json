@@ -2,7 +2,6 @@
   "name": "negoce.ci-clone-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://august-dev-pro.github.io/E-SHOP-CI",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
@@ -46,8 +45,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^6.1.1"
   }
 }

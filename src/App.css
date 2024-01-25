@@ -1,5 +1,57 @@
-@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;400;500;600;700;800;900&display=swap");
-
+@font-face {
+  font-family: "Kanit-Black.ttf";
+  src: url("../public/fonts/Kanit/Kanit-Black.ttf") format("TRUETYPE");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kanit-Black.ttf";
+  src: url("../public/fonts/Kanit/Kanit-Black.ttf") format("TRUETYPE");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kanit-Black.ttf";
+  src: url("../public/fonts/Kanit/Kanit-Bold.ttf") format("TRUETYPE");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kanit-Black.ttf";
+  src: url("../public/fonts/Kanit/Kanit-ExtraLight.ttf") format("TRUETYPE");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kanit-Black.ttf";
+  src: url("../public/fonts/Kanit/Kanit-Light.ttf") format("TRUETYPE");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kanit-Black.ttf";
+  src: url("../public/fonts/Kanit/Kanit-Medium.ttf") format("TRUETYPE");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kanit-Black.ttf";
+  src: url("../public/fonts/Kanit/Kanit-Thin.ttf") format("TRUETYPE");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kanit-Black.ttf";
+  src: url("../public/fonts/Kanit/Kanit-SemiBold.ttf") format("TRUETYPE");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kanit-Black.ttf";
+  src: url("../public/fonts/Kanit/Kanit-Regular.ttf") format("TRUETYPE");
+  font-weight: normal;
+  font-style: normal;
+}
 html,
 body,
 div,
@@ -54,7 +106,7 @@ button {
   color: #fff;
   font-weight: 500;
   font-size: 16px;
-  padding: 10px 15px;
+  padding: 7px 10px;
   border-radius: 0.5rem;
   transition: 0.3s;
 }

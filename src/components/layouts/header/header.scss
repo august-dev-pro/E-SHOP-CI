@@ -116,7 +116,7 @@
                 span {
                     padding: 1.5px;
                     background-color: #ff5e00;
-                    width: 20px;
+                    width: 25px;
                 }
             }
 
@@ -139,17 +139,14 @@
                 .chield {
                     padding: 14px;
                     cursor: pointer;
-
-                }
-
-                .chield:hover {
-                    background-color: #fff;
                     height: 100%;
                     transition: all .5s;
 
                     a {
                         display: flex;
                         flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
 
                         span {
                             display: flex;
@@ -157,14 +154,30 @@
                         }
 
                         span::after {
+                            transition: all .5s;
                             content: "";
-                            width: 100%;
-                            padding: .5px;
-                            background-color: #303030;
+                            width: 0%;
+                            padding: 1px;
+                            background-color: inherit;
+                            margin: 0 auto;
                         }
 
                     }
 
+
+                }
+
+                .chield:hover {
+                    background-color: #fff;
+
+                    a {
+
+                        span::after {
+                            width: 100%;
+                            background-color: #303030;
+                        }
+
+                    }
                 }
 
 
@@ -174,3 +187,280 @@
         }
     }
 }
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 5%;
+    }
+
+    .header {
+        .bar {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        .header_content {
+            .content_container {
+                .content {
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 5px 0;
+
+
+                    #logo {
+                        display: none;
+                    }
+
+                    .search_form {
+                        width: 100%;
+                        justify-content: center;
+
+                        #search {
+                            width: 60%;
+                            border-right: none;
+                            padding-left: 10px;
+                            height: 35px;
+                        }
+
+                    }
+
+                    .acunt-links {
+                        display: none
+                    }
+                }
+            }
+        }
+
+        .nav-bar {
+            .nav_container {
+                display: flex;
+                gap: 0px;
+                justify-content: space-between;
+
+                .biblio {
+                    padding: 10px;
+                }
+
+                .biblio:hover {
+                    span {
+                        background-color: #000000;
+                    }
+                }
+
+                #logo1 {
+                    font-weight: 600;
+                    font-size: 20px;
+                    width: max-content;
+                }
+
+                .links {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media ((min-width: 577px) and (max-width: 767px)) {
+    .container {
+        padding: 0 5%;
+    }
+
+    .header {
+        .bar {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        .header_content {
+            .content_container {
+                .content {
+                    flex-direction: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px 0;
+
+                    #logo {
+                        display: none;
+                    }
+
+                    .search_form {
+
+                        #search {
+                            width: auto;
+                            border-right: none;
+                            padding-left: 10px;
+                            height: 35px;
+                        }
+
+                    }
+
+                    .acunt-links {
+                        display: flex
+                    }
+                }
+            }
+        }
+
+        .nav-bar {
+            .nav_container {
+                display: flex;
+                gap: 0px;
+                justify-content: space-between;
+
+                .biblio {
+                    padding: 10px;
+                }
+
+                .biblio:hover {
+                    span {
+                        background-color: #000000;
+                    }
+                }
+
+                #logo1 {
+                    font-weight: 600;
+                    font-size: 20px;
+                    width: max-content;
+                }
+
+                .links {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media ((min-width: 768px) and (max-width: 991px)) {
+    .container {
+        padding: 0 5%;
+    }
+
+    .header {
+        .bar {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        .header_content {
+            .content_container {
+                .content {
+                    flex-direction: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px 0;
+
+                    #logo {
+                        display: none;
+                    }
+
+                    .search_form {
+
+                        #search {
+                            width: auto;
+                            border-right: none;
+                            padding-left: 10px;
+                            height: 35px;
+                        }
+
+                    }
+
+                    .acunt-links {
+                        display: flex
+                    }
+                }
+            }
+        }
+
+        .nav-bar {
+            .nav_container {
+                display: flex;
+                gap: 0px;
+                justify-content: space-between;
+
+                .biblio {
+                    padding: 10px;
+                }
+
+                .biblio:hover {
+                    span {
+                        background-color: #000000;
+                    }
+                }
+
+                #logo1 {
+                    font-weight: 600;
+                    font-size: 20px;
+                    width: max-content;
+                }
+
+                .links {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media ((min-width: 992px) and (max-width: 1199px)) {
+    .container {
+        padding: 0 50px;
+    }
+
+    .header {
+        .bar {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        .header_content {
+            .content_container {
+                .content {
+                    flex-direction: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 15px 0;
+
+                    .search_form {
+
+                        #search {
+                            width: auto;
+                            border-right: none;
+                            padding-left: 10px;
+                            height: 35px;
+                        }
+
+                    }
+
+                    .acunt-links {
+                        display: flex;
+                    }
+                }
+            }
+        }
+
+        .nav-bar {
+            .nav_container {
+                display: flex;
+                gap: 0px;
+                justify-content: space-between;
+
+                .biblio {
+                    padding: 10px;
+                }
+
+
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    #logo1 {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1200px) {}

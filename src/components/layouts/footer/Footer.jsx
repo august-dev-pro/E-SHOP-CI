@@ -1,7 +1,5 @@
 import {
-  faFacebook,
   faFacebookF,
-  faSquareFacebook,
   faSquareInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -62,7 +60,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="about_info">
+            <div className="about_info about_info-top">
               <div className="field">
                 <div className="title">a propos de nous</div>
                 <div className="links">
@@ -106,9 +104,53 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <Maker />
           </div>
         </div>
+        <div className="about_info about_info-bottom">
+          <div className="field">
+            <div className="title">a propos de nous</div>
+            <div className="links">
+              <a href="#">
+                <div className="label">qui sommes nous ?</div>
+              </a>
+              <a href="#">
+                <div className="label">s'inscrire</div>
+              </a>
+              <a href="#">
+                <div className="label">nos projets</div>
+              </a>
+            </div>
+          </div>
+          <div className="field">
+            <div className="title">nos ervices</div>
+            <div className="links">
+              <a href="#">
+                <div className="label">qui sommes nous ?</div>
+              </a>
+              <a href="#">
+                <div className="label">nos partenariats</div>
+              </a>
+              <a href="#">
+                <div className="label">nous rejoindre</div>
+              </a>
+            </div>
+          </div>
+          <div className="field">
+            <div className="title">nos partenaires</div>
+            <div className="links">
+              <a href="#">
+                <div className="label">partenaires officiels</div>
+              </a>
+              <a href="#">
+                <div className="label">confidentialité partenarial</div>
+              </a>
+              <a href="#">
+                <div className="label">devenir partenaire</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <Maker />
       </div>
     </footer>
   );

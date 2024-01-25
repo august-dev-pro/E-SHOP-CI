@@ -1,3 +1,77 @@
+/* nos bons plans section */
+.nosBonPlan_section {
+    .nosBonPlan_container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .nosBonPlan_content {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            gap: 50px;
+            overflow: hidden;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+
+    /* section title */
+    .section_tile {
+        font-size: 25px;
+        //   background-color: #dba154;
+    }
+
+    /* nos bons plans */
+    .nosBonPlan_section {
+        .nosBonPlan_container {
+            .nosBonPlan_content {
+                justify-content: center;
+                display: grid;
+                grid-template-columns: repeat(1, auto);
+                gap: 10px;
+            }
+        }
+    }
+
+    /* accessoitres pour enfants */
+    .accessoires-enfant_section {
+        .accessoires_container {
+            .accessoires_content {
+                grid-template-columns: repeat(1, auto) !important;
+                gap: 20px !important;
+                justify-content: center;
+            }
+        }
+    }
+
+
+}
+
+@media ((min-width: 577px) and (max-width: 800px)) {
+    .nosBonPlan_section {
+        .nosBonPlan_container {
+            .nosBonPlan_content {
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+                gap: 5%;
+            }
+        }
+    }
+}
+
+@media ((min-width: 991px) and (max-width: 1199px)) {
+    .nosBonPlan_section {
+        .nosBonPlan_container {
+            .nosBonPlan_content {
+                display: grid;
+                grid-template-columns: repeat(3, auto);
+                gap: 50px;
+            }
+        }
+    }
+}
+
 /* news section style */
 .news_section {
     .news_container {
@@ -35,6 +109,21 @@
         display: flex;
         flex-direction: column;
         gap: 50px;
+    }
+}
+
+@media (max-width: 400px) {
+
+
+    /* asides section */
+    .asides {
+        .asides_container {
+            gap: 20px;
+
+            .aside {
+                width: 100% !important;
+            }
+        }
     }
 }
 

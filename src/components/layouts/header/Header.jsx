@@ -16,7 +16,7 @@ const Header = () => {
       boundingBox.bottom > 0 && boundingBox.top < window.innerHeight;
 
     // Mettez à jour la classe de scroll-nav-bar en fonction de la visibilité
-    if (isVisible) {
+    if (flexNavBar && isVisible) {
       scrollNavBar.classList.add("hidden");
     } else {
       scrollNavBar.classList.remove("hidden");
@@ -41,7 +41,7 @@ const Header = () => {
       <div className="header_content">
         <div className="content_container container">
           <div className="content">
-            <div id="logo">august-dev-pro</div>
+            <div id="logo">E-SHOP CI</div>
             <form action="post" className="search_form">
               <input
                 type="search"
@@ -73,6 +73,7 @@ const Header = () => {
       </div>
       <nav id="flex-nav-bar" className="nav-bar">
         <div className="nav_container container">
+          <div id="logo1">E-SHOP CI</div>
           <div className="biblio">
             <span></span>
             <span></span>
@@ -115,6 +116,7 @@ const Header = () => {
       </nav>
       <nav id="scroll-nav-bar" className="nav-bar">
         <div className="nav_container container">
+          <div id="logo1">E-SHOP CI</div>
           <div className="biblio">
             <span></span>
             <span></span>
