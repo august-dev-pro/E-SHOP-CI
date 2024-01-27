@@ -1,19 +1,27 @@
 {
   "files": {
-    "main.css": "/E-SHOP-CI/static/css/main.e02db50d.css",
-    "main.js": "/E-SHOP-CI/static/js/main.080eb900.js",
-    "static/js/787.92e231f8.chunk.js": "/E-SHOP-CI/static/js/787.92e231f8.chunk.js",
-    "static/media/slick.svg": "/E-SHOP-CI/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/E-SHOP-CI/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/E-SHOP-CI/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/E-SHOP-CI/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/E-SHOP-CI/index.html",
-    "main.e02db50d.css.map": "/E-SHOP-CI/static/css/main.e02db50d.css.map",
-    "main.080eb900.js.map": "/E-SHOP-CI/static/js/main.080eb900.js.map",
-    "787.92e231f8.chunk.js.map": "/E-SHOP-CI/static/js/787.92e231f8.chunk.js.map"
+    "main.css": "/static/css/main.0c0db990.css",
+    "main.js": "/static/js/main.f866c5e6.js",
+    "static/js/787.92e231f8.chunk.js": "/static/js/787.92e231f8.chunk.js",
+    "static/media/Kanit-Black.ttf": "/static/media/Kanit-Black.ff456266a65e712bce54.ttf",
+    "static/media/Kanit-Bold.ttf": "/static/media/Kanit-Bold.46cd98a815b9874526ad.ttf",
+    "static/media/Kanit-SemiBold.ttf": "/static/media/Kanit-SemiBold.cf86a473ecf932fb0053.ttf",
+    "static/media/Kanit-Medium.ttf": "/static/media/Kanit-Medium.786fd6bb96ce0cf5c5b2.ttf",
+    "static/media/Kanit-Regular.ttf": "/static/media/Kanit-Regular.f3bae13d78ced30b6ea3.ttf",
+    "static/media/Kanit-Light.ttf": "/static/media/Kanit-Light.7b6b95563f4c5697d973.ttf",
+    "static/media/Kanit-ExtraLight.ttf": "/static/media/Kanit-ExtraLight.c30ae435f86553872b17.ttf",
+    "static/media/Kanit-Thin.ttf": "/static/media/Kanit-Thin.2e32ea46402cf7c9bcb4.ttf",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.0c0db990.css.map": "/static/css/main.0c0db990.css.map",
+    "main.f866c5e6.js.map": "/static/js/main.f866c5e6.js.map",
+    "787.92e231f8.chunk.js.map": "/static/js/787.92e231f8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e02db50d.css",
-    "static/js/main.080eb900.js"
+    "static/css/main.0c0db990.css",
+    "static/js/main.f866c5e6.js"
   ]
 }
