@@ -1,4 +1,3 @@
-![Screenshot 2024-01-21 at 12-45-13 React App](https://github.com/august-dev-pro/E-SHOP-CI/assets/143771382/e644ff13-d957-4233-a6d8-6214eb885dd3)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
