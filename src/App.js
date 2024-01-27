@@ -11,15 +11,15 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {/*  <BrowserRouter>
+      <BrowserRouter>
         <Routes>
           <Route path="/" exact element={<HomePage />} />
           <Route path="/register" exact element={<Register />} />
           <Route path="/login" exact element={<Login />} />
           <Route path="/product/:id" exact element={<ProductShow />} />
         </Routes>
-      </BrowserRouter> */}
-      <HomePage />
+      </BrowserRouter>
+      {/* <HomePage /> */}
       <Footer />
     </div>
   );
