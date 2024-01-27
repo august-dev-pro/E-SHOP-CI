@@ -30,6 +30,11 @@
                 display: grid;
                 grid-template-columns: repeat(1, auto);
                 gap: 10px;
+
+                .article {
+                    width: 90%;
+                    margin: 0 auto;
+                }
             }
         }
     }
@@ -41,6 +46,11 @@
                 grid-template-columns: repeat(1, auto) !important;
                 gap: 20px !important;
                 justify-content: center;
+
+                .article {
+                    width: 90%;
+                    margin: 0 auto;
+                }
             }
         }
     }

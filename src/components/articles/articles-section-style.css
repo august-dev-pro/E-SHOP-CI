@@ -23,11 +23,19 @@
     grid-template-columns: repeat(1, auto);
     gap: 10px;
   }
+  .nosBonPlan_section .nosBonPlan_container .nosBonPlan_content .article {
+    width: 90%;
+    margin: 0 auto;
+  }
   /* accessoitres pour enfants */
   .accessoires-enfant_section .accessoires_container .accessoires_content {
     grid-template-columns: repeat(1, auto) !important;
     gap: 20px !important;
     justify-content: center;
+  }
+  .accessoires-enfant_section .accessoires_container .accessoires_content .article {
+    width: 90%;
+    margin: 0 auto;
   }
 }
 @media ((min-width: 577px) and (max-width: 800px)) {

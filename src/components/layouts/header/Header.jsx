@@ -41,7 +41,9 @@ const Header = () => {
       <div className="header_content">
         <div className="content_container container">
           <div className="content">
-            <div id="logo">E-SHOP CI</div>
+            <a href="/" id="logo">
+              E-SHOP CI
+            </a>
             <form action="post" className="search_form">
               <input
                 type="search"
@@ -73,7 +75,9 @@ const Header = () => {
       </div>
       <nav id="flex-nav-bar" className="nav-bar">
         <div className="nav_container container">
-          <div id="logo1">E-SHOP CI</div>
+          <a href="/" id="logo1">
+            E-SHOP CI
+          </a>
           <div className="biblio">
             <span></span>
             <span></span>
@@ -116,7 +120,9 @@ const Header = () => {
       </nav>
       <nav id="scroll-nav-bar" className="nav-bar">
         <div className="nav_container container">
-          <div id="logo1">E-SHOP CI</div>
+          <a href="/" id="logo1">
+            E-SHOP CI
+          </a>
           <div className="biblio">
             <span></span>
             <span></span>
