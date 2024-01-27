@@ -23,10 +23,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -46,9 +46,11 @@
       "last 1 safari version"
     ]
   },
-  "description": "![Screenshot 2024-01-21 at 12-45-13 React App](https://github.com/august-dev-pro/E-SHOP-CI/assets/143771382/e644ff13-d957-4233-a6d8-6214eb885dd3)\r # Getting Started with Create React App",
+  "description": "![Screenshot 2024-01-21 at 12-45-13 React App](https://github.com/august-dev-pro/E-SHOP-CI/raw/main/assets/143771382/e644ff13-d957-4233-a6d8-6214eb885dd3)\r # Getting Started with Create React App",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  },
   "author": "",
   "license": "ISC"
 }
