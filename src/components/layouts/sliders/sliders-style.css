@@ -46,7 +46,7 @@
     border-radius: 0.2rem;
   }
   .article-slide-section .articles_slider .article .image .img-content {
-    height: 100px;
+    height: 120px;
     padding: 5px;
   }
   .article-slide-section .articles_slider .article .image .img-content img {
@@ -59,8 +59,8 @@
   .article-slide-section .articles_slider .article .descriptions .article_name {
     padding: 5px 0;
     background-color: #f3f3f3;
-    font-size: 10px;
-    font-weight: 300;
+    font-size: 12px;
+    font-weight: 400;
   }
   .article-slide-section .articles_slider .article .descriptions .price-detail {
     padding: 7px;

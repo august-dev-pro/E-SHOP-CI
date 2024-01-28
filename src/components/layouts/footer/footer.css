@@ -152,17 +152,20 @@
 .footer .footer_container .footer_content .send_massage_form .form_content .field textarea {
   height: 100px;
 }
+.footer .footer_container .footer_content .send_massage_form .form_content .field input {
+  height: 35px;
+}
 .footer .footer_container .footer_content .send_massage_form .form_content .submite {
   width: -moz-fit-content;
   width: fit-content;
   margin-top: 10px;
-  padding: 3px 5px;
+  padding: 4px 5px;
   background-color: orangered;
   border-radius: 0.2rem;
   border: none;
   transition: all 0.5s;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 1-px;
 }
 .footer .footer_container .footer_content .send_massage_form .form_content .submite:hover {
   background-color: #ffa600;

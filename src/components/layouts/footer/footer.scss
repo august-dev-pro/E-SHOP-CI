@@ -177,18 +177,22 @@
                         textarea {
                             height: 100px;
                         }
+
+                        input {
+                            height: 35px;
+                        }
                     }
 
                     .submite {
                         width: fit-content;
                         margin-top: 10px;
-                        padding: 3px 5px;
+                        padding: 4px 5px;
                         background-color: orangered;
                         border-radius: .2rem;
                         border: none;
                         transition: all .5s;
                         font-weight: 400;
-                        font-size: 15px;
+                        font-size: 1-px;
                     }
 
                     .submite:hover {
