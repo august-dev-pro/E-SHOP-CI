@@ -110,7 +110,7 @@
     font-weight: 400;
   }
   .accessoires-enfant_section .accessoires_container .accessoires_content .article .descriptions .price-detail {
-    padding: 10px 0;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
