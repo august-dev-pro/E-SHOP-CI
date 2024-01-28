@@ -27,14 +27,14 @@
     justify-content: center;
     display: grid;
     grid-template-columns: repeat(2, auto);
-    gap: 10px;
+    gap: 18px;
   }
   .nosBonPlan_section .nosBonPlan_container .nosBonPlan_content .article {
-    width: 130px;
+    width: 150px;
     border-radius: 0.2rem;
   }
   .nosBonPlan_section .nosBonPlan_container .nosBonPlan_content .article .image .img-content {
-    height: 100px;
+    height: 110px;
     padding: 5px;
   }
   .nosBonPlan_section .nosBonPlan_container .nosBonPlan_content .article .image .img-content img {
@@ -51,20 +51,20 @@
     text-align: center;
   }
   .nosBonPlan_section .nosBonPlan_container .nosBonPlan_content .article .descriptions .article_name {
-    padding: 5px 0;
+    padding: 7px 0;
     background-color: #f3f3f3;
-    font-size: 10px;
-    font-weight: 300;
+    font-size: 12px;
+    font-weight: 400;
   }
   .nosBonPlan_section .nosBonPlan_container .nosBonPlan_content .article .descriptions .price-detail {
-    padding: 7px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   .nosBonPlan_section .nosBonPlan_container .nosBonPlan_content .article .descriptions .price-detail .price {
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 500;
     color: #000000;
   }
   .nosBonPlan_section .nosBonPlan_container .nosBonPlan_content .article .descriptions .price-detail button {

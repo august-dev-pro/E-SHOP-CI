@@ -35,15 +35,15 @@
                 justify-content: center;
                 display: grid;
                 grid-template-columns: repeat(2, auto);
-                gap: 10px;
+                gap: 18px;
 
                 .article {
-                    width: 130px;
+                    width: 150px;
                     border-radius: .2rem;
 
                     .image {
                         .img-content {
-                            height: 100px;
+                            height: 110px;
                             padding: 5px;
 
                             img {
@@ -69,21 +69,21 @@
                         text-align: center;
 
                         .article_name {
-                            padding: 5px 0;
+                            padding: 7px 0;
                             background-color: #f3f3f3;
-                            font-size: 10px;
-                            font-weight: 300;
+                            font-size: 12px;
+                            font-weight: 400;
                         }
 
                         .price-detail {
-                            padding: 7px;
+                            padding: 10px;
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
 
                             .price {
                                 font-size: 13px;
-                                font-weight: 400;
+                                font-weight: 500;
                                 color: #000000;
                             }
 
