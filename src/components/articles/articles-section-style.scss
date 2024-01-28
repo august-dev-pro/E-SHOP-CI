@@ -24,16 +24,76 @@
 
     /* nos bons plans */
     .nosBonPlan_section {
+        .section_tile {
+            padding: 0 5%;
+        }
+
         .nosBonPlan_container {
+            padding: 0;
+
             .nosBonPlan_content {
                 justify-content: center;
                 display: grid;
-                grid-template-columns: repeat(1, auto);
+                grid-template-columns: repeat(2, auto);
                 gap: 10px;
 
                 .article {
-                    width: 90%;
-                    margin: 0 auto;
+                    width: 130px;
+                    border-radius: .2rem;
+
+                    .image {
+                        .img-content {
+                            height: 100px;
+                            padding: 5px;
+
+                            img {
+                                max-width: 100%;
+                                max-height: 100%;
+                            }
+                        }
+                    }
+
+                    .image:hover {
+                        .img-content::after {
+                            background-color: #001f4d2a;
+                        }
+
+                        .img-content {
+                            .img {
+                                max-height: 200px !important;
+                            }
+                        }
+                    }
+
+                    .descriptions {
+                        text-align: center;
+
+                        .article_name {
+                            padding: 5px 0;
+                            background-color: #f3f3f3;
+                            font-size: 10px;
+                            font-weight: 300;
+                        }
+
+                        .price-detail {
+                            padding: 7px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .price {
+                                font-size: 13px;
+                                font-weight: 400;
+                                color: #000000;
+                            }
+
+                            button {
+                                border-radius: .2rem;
+                                padding: 2px 8px;
+                                font-size: 13px;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -41,15 +101,72 @@
 
     /* accessoitres pour enfants */
     .accessoires-enfant_section {
+        padding: 0 5%;
+
         .accessoires_container {
             .accessoires_content {
-                grid-template-columns: repeat(1, auto) !important;
-                gap: 20px !important;
                 justify-content: center;
+                display: grid !important;
+                grid-template-columns: repeat(2, auto) !important;
+                gap: 10px !important;
 
                 .article {
-                    width: 90%;
-                    margin: 0 auto;
+                    width: 130px;
+                    border-radius: .2rem;
+
+                    .image {
+                        .img-content {
+                            height: 100px;
+                            padding: 5px;
+
+                            img {
+                                max-width: 100%;
+                                max-height: 100%;
+                            }
+                        }
+                    }
+
+                    .image:hover {
+                        .img-content::after {
+                            background-color: #001f4d2a;
+                        }
+
+                        .img-content {
+                            .img {
+                                max-height: 200px !important;
+                            }
+                        }
+                    }
+
+                    .descriptions {
+                        text-align: center;
+
+                        .article_name {
+                            padding: 5px 0;
+                            background-color: #f3f3f3;
+                            font-size: 10px;
+                            font-weight: 300;
+                        }
+
+                        .price-detail {
+                            padding: 7px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .price {
+                                font-size: 13px;
+                                font-weight: 400;
+                                color: #000000;
+                            }
+
+                            button {
+                                border-radius: .2rem;
+                                padding: 2px 8px;
+                                font-size: 13px;
+                            }
+                        }
+                    }
                 }
             }
         }

@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 //import CategoriesNavSlider from "../layouts/sliders/CategoriesNavSlider";
 import SliderArticles from "../layouts/sliders/SliderArticles";
-import Product from "../product/Product";
 import "./articles-section-style.css";
 const Nouveautes = () => {
   return (

@@ -9,7 +9,7 @@ const AccessoiresEnfant = () => {
     <section className="accessoires-enfant_section">
       <div className="accessoires_container">
         <div className="section_tile">Accessoires Enfant</div>
-        <div className="accessoires_content">
+        <div className="accessoires_content content">
           {limitedProducts.map((product) => {
             {
               return <Product {...product} />;

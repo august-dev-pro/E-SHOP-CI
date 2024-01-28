@@ -35,7 +35,7 @@ const SliderArticles = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
@@ -46,9 +46,7 @@ const SliderArticles = () => {
     <section className="article-slide-section">
       <Slider className="articles_slider" {...settings} dots={false}>
         {ProductsData.map((product) => (
-          <article>
-            <Product {...product} />
-          </article>
+          <Product {...product} />
         ))}
       </Slider>
     </section>

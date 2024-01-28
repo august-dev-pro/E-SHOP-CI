@@ -1,6 +1,6 @@
 import React from "react";
 import "./banner.css";
-import { useSpring, animated } from "react-spring";
+import { useSpring } from "react-spring";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

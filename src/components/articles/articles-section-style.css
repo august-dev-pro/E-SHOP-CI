@@ -17,25 +17,113 @@
     font-size: 25px;
   }
   /* nos bons plans */
+  .nosBonPlan_section .section_tile {
+    padding: 0 5%;
+  }
+  .nosBonPlan_section .nosBonPlan_container {
+    padding: 0;
+  }
   .nosBonPlan_section .nosBonPlan_container .nosBonPlan_content {
     justify-content: center;
     display: grid;
-    grid-template-columns: repeat(1, auto);
+    grid-template-columns: repeat(2, auto);
     gap: 10px;
   }
   .nosBonPlan_section .nosBonPlan_container .nosBonPlan_content .article {
-    width: 90%;
-    margin: 0 auto;
+    width: 130px;
+    border-radius: 0.2rem;
+  }
+  .nosBonPlan_section .nosBonPlan_container .nosBonPlan_content .article .image .img-content {
+    height: 100px;
+    padding: 5px;
+  }
+  .nosBonPlan_section .nosBonPlan_container .nosBonPlan_content .article .image .img-content img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .nosBonPlan_section .nosBonPlan_container .nosBonPlan_content .article .image:hover .img-content::after {
+    background-color: rgba(0, 31, 77, 0.1647058824);
+  }
+  .nosBonPlan_section .nosBonPlan_container .nosBonPlan_content .article .image:hover .img-content .img {
+    max-height: 200px !important;
+  }
+  .nosBonPlan_section .nosBonPlan_container .nosBonPlan_content .article .descriptions {
+    text-align: center;
+  }
+  .nosBonPlan_section .nosBonPlan_container .nosBonPlan_content .article .descriptions .article_name {
+    padding: 5px 0;
+    background-color: #f3f3f3;
+    font-size: 10px;
+    font-weight: 300;
+  }
+  .nosBonPlan_section .nosBonPlan_container .nosBonPlan_content .article .descriptions .price-detail {
+    padding: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nosBonPlan_section .nosBonPlan_container .nosBonPlan_content .article .descriptions .price-detail .price {
+    font-size: 13px;
+    font-weight: 400;
+    color: #000000;
+  }
+  .nosBonPlan_section .nosBonPlan_container .nosBonPlan_content .article .descriptions .price-detail button {
+    border-radius: 0.2rem;
+    padding: 2px 8px;
+    font-size: 13px;
   }
   /* accessoitres pour enfants */
+  .accessoires-enfant_section {
+    padding: 0 5%;
+  }
   .accessoires-enfant_section .accessoires_container .accessoires_content {
-    grid-template-columns: repeat(1, auto) !important;
-    gap: 20px !important;
     justify-content: center;
+    display: grid !important;
+    grid-template-columns: repeat(2, auto) !important;
+    gap: 10px !important;
   }
   .accessoires-enfant_section .accessoires_container .accessoires_content .article {
-    width: 90%;
-    margin: 0 auto;
+    width: 130px;
+    border-radius: 0.2rem;
+  }
+  .accessoires-enfant_section .accessoires_container .accessoires_content .article .image .img-content {
+    height: 100px;
+    padding: 5px;
+  }
+  .accessoires-enfant_section .accessoires_container .accessoires_content .article .image .img-content img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .accessoires-enfant_section .accessoires_container .accessoires_content .article .image:hover .img-content::after {
+    background-color: rgba(0, 31, 77, 0.1647058824);
+  }
+  .accessoires-enfant_section .accessoires_container .accessoires_content .article .image:hover .img-content .img {
+    max-height: 200px !important;
+  }
+  .accessoires-enfant_section .accessoires_container .accessoires_content .article .descriptions {
+    text-align: center;
+  }
+  .accessoires-enfant_section .accessoires_container .accessoires_content .article .descriptions .article_name {
+    padding: 5px 0;
+    background-color: #f3f3f3;
+    font-size: 10px;
+    font-weight: 300;
+  }
+  .accessoires-enfant_section .accessoires_container .accessoires_content .article .descriptions .price-detail {
+    padding: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .accessoires-enfant_section .accessoires_container .accessoires_content .article .descriptions .price-detail .price {
+    font-size: 13px;
+    font-weight: 400;
+    color: #000000;
+  }
+  .accessoires-enfant_section .accessoires_container .accessoires_content .article .descriptions .price-detail button {
+    border-radius: 0.2rem;
+    padding: 2px 8px;
+    font-size: 13px;
   }
 }
 @media ((min-width: 577px) and (max-width: 800px)) {

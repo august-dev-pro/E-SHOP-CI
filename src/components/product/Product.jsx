@@ -1,3 +1,5 @@
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { limiterNomArticle } from "../../fonctions/limiterNomArticle";
 import "./product.css";
@@ -15,7 +17,9 @@ const Product = ({ id, title, price, image }) => {
           <div className="article_name">{limiterNomArticle(title, 25)}</div>
           <div className="price-detail">
             <div className="price">{price} FCFA</div>
-            <button> Détails </button>
+            <button>
+              <FontAwesomeIcon icon={faFacebook} />
+            </button>
           </div>
         </div>
       </article>

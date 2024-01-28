@@ -1,9 +1,5 @@
 import React from "react";
-import CategoriesAside from "../layouts/asides/CategoriesAside";
-import CategoriesNavSlider from "../layouts/sliders/CategoriesNavSlider";
 import AccessoiresEnfant from "./AccessoiresEnfant";
-import NosBonsPlans from "./NosBonsPlans";
-import Nouveautes from "./Nouveautes";
 
 const Wrappers = () => {
   return (
