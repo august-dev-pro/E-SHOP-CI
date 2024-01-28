@@ -42,7 +42,7 @@
 /* news article sliders style */
 @media (max-width: 400px) {
   .article-slide-section .articles_slider .article {
-    width: 120px;
+    width: 150px;
     border-radius: 0.2rem;
   }
   .article-slide-section .articles_slider .article .image .img-content {
@@ -70,11 +70,12 @@
   }
   .article-slide-section .articles_slider .article .descriptions .price-detail .price {
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 600;
     color: #000000;
   }
   .article-slide-section .articles_slider .article .descriptions .price-detail button {
-    padding: 2px 5px;
+    border-radius: 0.2rem;
+    padding: 3px 15px;
     font-size: 13px;
   }
 }/*# sourceMappingURL=sliders-style.css.map */

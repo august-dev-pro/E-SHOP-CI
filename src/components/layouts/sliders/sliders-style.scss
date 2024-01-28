@@ -52,7 +52,7 @@
     .article-slide-section {
         .articles_slider {
             .article {
-                width: 120px;
+                width: 150px;
                 border-radius: .2rem;
 
                 .image {
@@ -85,12 +85,13 @@
 
                         .price {
                             font-size: 13px;
-                            font-weight: 400;
+                            font-weight: 600;
                             color: #000000;
                         }
 
                         button {
-                            padding: 2px 5px;
+                            border-radius: .2rem;
+                            padding: 3px 15px;
                             font-size: 13px;
                         }
                     }
