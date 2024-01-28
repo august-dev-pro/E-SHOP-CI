@@ -38,12 +38,12 @@
                 gap: 18px;
 
                 .article {
-                    width: 150px;
+                    width: 170px;
                     border-radius: .2rem;
 
                     .image {
                         .img-content {
-                            height: 110px;
+                            height: 130px;
                             padding: 5px;
 
                             img {
@@ -89,7 +89,7 @@
 
                             button {
                                 border-radius: .2rem;
-                                padding: 2px 8px;
+                                padding: 3px 10px;
                                 font-size: 13px;
                             }
                         }
@@ -111,12 +111,12 @@
                 gap: 10px !important;
 
                 .article {
-                    width: 130px;
+                    width: 170px;
                     border-radius: .2rem;
 
                     .image {
                         .img-content {
-                            height: 100px;
+                            height: 130px;
                             padding: 5px;
 
                             img {
@@ -142,27 +142,27 @@
                         text-align: center;
 
                         .article_name {
-                            padding: 5px 0;
+                            padding: 7px 0;
                             background-color: #f3f3f3;
                             font-size: 10px;
-                            font-weight: 300;
+                            font-weight: 400;
                         }
 
                         .price-detail {
-                            padding: 7px;
+                            padding: 10px;
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
 
                             .price {
                                 font-size: 13px;
-                                font-weight: 400;
+                                font-weight: 500;
                                 color: #000000;
                             }
 
                             button {
                                 border-radius: .2rem;
-                                padding: 2px 8px;
+                                padding: 3px 10px;
                                 font-size: 13px;
                             }
                         }
