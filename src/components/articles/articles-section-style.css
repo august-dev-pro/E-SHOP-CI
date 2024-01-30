@@ -11,6 +11,28 @@
   overflow: hidden;
 }
 
+.search_resultat-section {
+  padding-bottom: 50px;
+}
+.search_resultat-section .search_resultat_container .search_resultat_content .search_resultat_section_title {
+  font-weight: 500;
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+.search_resultat-section .search_resultat_container .search_resultat_content .search_resultat_section_title .icon {
+  color: #ff7b00;
+  font-size: 30px;
+}
+.search_resultat-section .search_resultat_container .search_resultat_content .search_resultat {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 30px;
+}
+
 @media (max-width: 400px) {
   /* section title */
   .section_tile {
@@ -121,6 +143,67 @@
     color: #000000;
   }
   .accessoires-enfant_section .accessoires_container .accessoires_content .article .descriptions .price-detail button {
+    border-radius: 0.2rem;
+    padding: 3px 15px;
+    font-size: 13px;
+  }
+  /* nos bons plans */
+  .search_resultat-section .search_resultat_container {
+    padding: 0;
+  }
+  .search_resultat-section .search_resultat_container .search_resultat_content .search_resultat_section_title {
+    font-size: 16px;
+    font-weight: 300;
+    padding: 10px 5%;
+  }
+  .search_resultat-section .search_resultat_container .search_resultat_content .search_resultat_section_title .icon {
+    font-size: 18px;
+  }
+  .search_resultat-section .search_resultat_container .search_resultat_content .search_resultat {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 18px;
+  }
+  .search_resultat-section .search_resultat_container .search_resultat_content .search_resultat .article {
+    width: 170px;
+    border-radius: 0.2rem;
+  }
+  .search_resultat-section .search_resultat_container .search_resultat_content .search_resultat .article .image .img-content {
+    height: 130px;
+    padding: 5px;
+  }
+  .search_resultat-section .search_resultat_container .search_resultat_content .search_resultat .article .image .img-content img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .search_resultat-section .search_resultat_container .search_resultat_content .search_resultat .article .image:hover .img-content::after {
+    background-color: rgba(0, 31, 77, 0.1647058824);
+  }
+  .search_resultat-section .search_resultat_container .search_resultat_content .search_resultat .article .image:hover .img-content .img {
+    max-height: 200px !important;
+  }
+  .search_resultat-section .search_resultat_container .search_resultat_content .search_resultat .article .descriptions {
+    text-align: center;
+  }
+  .search_resultat-section .search_resultat_container .search_resultat_content .search_resultat .article .descriptions .article_name {
+    padding: 7px 0;
+    background-color: #f3f3f3;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .search_resultat-section .search_resultat_container .search_resultat_content .search_resultat .article .descriptions .price-detail {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .search_resultat-section .search_resultat_container .search_resultat_content .search_resultat .article .descriptions .price-detail .price {
+    font-size: 13px;
+    font-weight: 500;
+    color: #000000;
+  }
+  .search_resultat-section .search_resultat_container .search_resultat_content .search_resultat .article .descriptions .price-detail button {
     border-radius: 0.2rem;
     padding: 3px 15px;
     font-size: 13px;

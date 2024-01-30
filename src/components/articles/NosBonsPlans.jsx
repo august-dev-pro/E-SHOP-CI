@@ -1,5 +1,5 @@
 import React from "react";
-import { GetDataFonction } from "../../fonctions/GetDataFonction";
+import { GetDataFonction } from "../../fonctions/productFonctions";
 import Product from "../product/Product";
 
 const NosBonsPlans = ({ openModal }) => {

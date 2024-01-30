@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./sliders-style.css";
-import { GetDataFonction } from "../../../fonctions/GetDataFonction";
+import { GetDataFonction } from "../../../fonctions/productFonctions";
 
 const CategoriesNavSlider = () => {
   const settings = {

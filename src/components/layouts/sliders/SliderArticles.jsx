@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./sliders-style.css";
 import Product from "../../product/Product";
-import { GetDataFonction } from "../../../fonctions/GetDataFonction";
+import { GetDataFonction } from "../../../fonctions/productFonctions";
 
 const SliderArticles = ({ openModal }) => {
   const settings = {
@@ -41,6 +41,7 @@ const SliderArticles = ({ openModal }) => {
       },
     ],
   };
+
   const ProductsData = GetDataFonction();
   return (
     <section className="article-slide-section">

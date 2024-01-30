@@ -1,7 +1,10 @@
 import React from "react";
+import {
+  GetDataFonction,
+  limiterNomArticle,
+} from "../../../fonctions/productFonctions";
 import "./asides-style.css";
-import { GetDataFonction } from "../../../fonctions/GetDataFonction";
-import { limiterNomArticle } from "../../../fonctions/limiterNomArticle";
+
 const NosBonsPlansAside = () => {
   const ProductsData = GetDataFonction();
   const limitedProducts = ProductsData.slice(0, 5);

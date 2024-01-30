@@ -1,8 +1,10 @@
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { GetDataFonction } from "../../fonctions/GetDataFonction";
-import { limiterNomArticle } from "../../fonctions/limiterNomArticle";
+import {
+  GetDataFonction,
+  limiterNomArticle,
+} from "../../fonctions/productFonctions";
 import "./product.css";
 
 const Product = ({ id, title, price, image, openModal }) => {

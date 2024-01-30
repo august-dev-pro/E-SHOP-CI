@@ -6,14 +6,25 @@ import HomePage from "./pages/home/HomePage";
 import Login from "./pages/user/Login";
 import Register from "./pages/user/Register";
 import "./modales";
+import { useState } from "react";
 
 function App() {
+  const [searchResults, setSearchResults] = useState([]);
+
+  const updateSearchResults = (results) => {
+    setSearchResults(results);
+  };
+
   return (
     <div className="App">
-      <Header />
+      <Header updateSearchResults={updateSearchResults} />
       <BrowserRouter>
         <Routes>
-          <Route path="/" exact element={<HomePage />} />
+          <Route
+            path="/"
+            exact
+            element={<HomePage searchResults={searchResults} />}
+          />
           <Route path="/register" exact element={<Register />} />
           <Route path="/login" exact element={<Login />} />
         </Routes>

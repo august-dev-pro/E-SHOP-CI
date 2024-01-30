@@ -1,13 +1,14 @@
 import {
-  faSearchengin,
-  faShopware,
-  faSquarespace,
-} from "@fortawesome/free-brands-svg-icons";
-import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+  faLockOpen,
+  faSearch,
+  faShoppingCart,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { productSearch } from "../../../fonctions/productFonctions";
 import "./header.css";
-const Header = () => {
+const Header = ({ updateSearchResults }) => {
   const handleScroll = () => {
     const flexNavBar = document.getElementById("flex-nav-bar");
     const scrollNavBar = document.getElementById("scroll-nav-bar");
@@ -33,6 +34,36 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const [searchTerm, setSearchTerm] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch("https://fakestoreapi.com/products");
+      const data = await response.json();
+      setProducts(data);
+    };
+
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+    const results = productSearch(searchTerm, products);
+    setSearchResults(results);
+  }, [searchTerm, products]);
+
+  const handleSearchChange = (event) => {
+    const term = event.target.value;
+    setSearchTerm(term);
+    const results = productSearch(term, products);
+    setSearchResults(results);
+    if (updateSearchResults && typeof updateSearchResults === "function") {
+      updateSearchResults(results);
+    }
+  };
+
   return (
     <header className="header">
       <div className="bar">
@@ -45,22 +76,24 @@ const Header = () => {
             <a href="/" id="logo">
               E-SHOP CI
             </a>
-            <form action="post" className="search_form">
+            <div className="search_form">
               <input
                 type="search"
                 name="search"
                 id="search"
                 required
-                placeholder="rechercher"
+                placeholder="rechercher..."
+                value={searchTerm}
+                onChange={handleSearchChange}
               />
-              <button type="submit" id="submit">
-                <FontAwesomeIcon icon={faSearchengin} />
+              <button id="submit">
+                <FontAwesomeIcon icon={faSearch} />
               </button>
-            </form>
+            </div>
             <div className="acunt-links">
               <a href="#" id="accunt-link">
                 <div className="icon">
-                  <FontAwesomeIcon icon={faSquarespace} />
+                  <FontAwesomeIcon icon={faLockOpen} />
                 </div>
                 <span>connexion</span>
               </a>

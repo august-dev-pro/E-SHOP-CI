@@ -1,6 +1,8 @@
 import React from "react";
-import { GetDataFonction } from "../../../fonctions/GetDataFonction";
-import { limiterNomArticle } from "../../../fonctions/limiterNomArticle";
+import {
+  GetDataFonction,
+  limiterNomArticle,
+} from "../../../fonctions/productFonctions";
 import "./asides-style.css";
 const NouveautesAside = () => {
   const ProductsData = GetDataFonction();
