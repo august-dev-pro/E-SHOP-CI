@@ -3,9 +3,9 @@ import "./App.css";
 import Footer from "./components/layouts/footer/Footer";
 import Header from "./components/layouts/header/Header";
 import HomePage from "./pages/home/HomePage";
-import ProductShow from "./pages/product/ProductShow";
 import Login from "./pages/user/Login";
 import Register from "./pages/user/Register";
+import "./modales";
 
 function App() {
   return (
@@ -16,10 +16,8 @@ function App() {
           <Route path="/" exact element={<HomePage />} />
           <Route path="/register" exact element={<Register />} />
           <Route path="/login" exact element={<Login />} />
-          <Route path="/product/:id" exact element={<ProductShow />} />
         </Routes>
       </BrowserRouter>
-      {/* <HomePage /> */}
       <Footer />
     </div>
   );

@@ -6,7 +6,7 @@ import "./sliders-style.css";
 import Product from "../../product/Product";
 import { GetDataFonction } from "../../../fonctions/GetDataFonction";
 
-const SliderArticles = () => {
+const SliderArticles = ({ openModal }) => {
   const settings = {
     dots: false,
     infinite: true,
@@ -46,7 +46,7 @@ const SliderArticles = () => {
     <section className="article-slide-section">
       <Slider className="articles_slider" {...settings} dots={false}>
         {ProductsData.map((product) => (
-          <Product {...product} />
+          <Product {...product} openModal={openModal} />
         ))}
       </Slider>
     </section>

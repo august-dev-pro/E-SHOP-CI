@@ -1,29 +1,36 @@
-import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { GetDataFonction } from "../../fonctions/GetDataFonction";
 import { limiterNomArticle } from "../../fonctions/limiterNomArticle";
 import "./product.css";
 
-const Product = ({ id, title, price, image }) => {
+const Product = ({ id, title, price, image, openModal }) => {
+  const products = GetDataFonction();
+  const handleOpenModal = () => {
+    const selectedProduct = products.find((product) => product.id === id);
+    // Appel de la fonction pour ouvrir le modal dans HomePage avec les détails du produit
+    openModal(selectedProduct);
+  };
   return (
-    <a href={`/product/${id}`}>
-      <article className="article">
-        <div className="image">
-          <div className="img-content">
-            <img src={image} alt="" />
-          </div>
+    <article className="article">
+      <div className="image">
+        <div onClick={handleOpenModal} className="img-content">
+          <img src={image} alt="" />
         </div>
-        <div className="descriptions">
-          <div className="article_name">{limiterNomArticle(title, 25)}</div>
-          <div className="price-detail">
-            <div className="price">{price} FCFA</div>
-            <button>
-              <FontAwesomeIcon icon={faFacebook} />
-            </button>
-          </div>
+      </div>
+      <div className="descriptions">
+        <div onClick={handleOpenModal} className="article_name">
+          {limiterNomArticle(title, 25)}
         </div>
-      </article>
-    </a>
+        <div className="price-detail">
+          <div className="price">{price} FCFA</div>
+          <button className="detailPopup">
+            <FontAwesomeIcon icon={faShoppingCart} />
+          </button>
+        </div>
+      </div>
+    </article>
   );
 };
 

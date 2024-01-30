@@ -1,12 +1,12 @@
 import React from "react";
 import AccessoiresEnfant from "./AccessoiresEnfant";
 
-const Wrappers = () => {
+const Wrappers = ({ openModal }) => {
   return (
     <section className="wrapper-section">
       <div className="wrapper_section_content">
-        <AccessoiresEnfant />
-        <AccessoiresEnfant />
+        <AccessoiresEnfant openModal={openModal} />
+        <AccessoiresEnfant openModal={openModal} />
       </div>
     </section>
   );

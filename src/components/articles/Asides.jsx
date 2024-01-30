@@ -3,13 +3,13 @@ import CategoriesAside from "../layouts/asides/CategoriesAside";
 import NosBonsPlansAside from "../layouts/asides/NosBonsPlansAside";
 import NouveautesAside from "../layouts/asides/NouveautesAside";
 
-const Asides = () => {
+const Asides = ({ openModal }) => {
   return (
     <div className="asides">
       <div className="asides_container">
         <CategoriesAside />
-        <NosBonsPlansAside />
-        <NouveautesAside />
+        <NosBonsPlansAside openModal={openModal} />
+        <NouveautesAside openModal={openModal} />
       </div>
     </div>
   );

@@ -3,6 +3,7 @@ import {
   faShopware,
   faSquarespace,
 } from "@fortawesome/free-brands-svg-icons";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect } from "react";
 import "./header.css";
@@ -65,7 +66,7 @@ const Header = () => {
               </a>
               <div className="panier">
                 <div className="icon">
-                  <FontAwesomeIcon icon={faShopware} />
+                  <FontAwesomeIcon icon={faShoppingCart} />
                 </div>
                 <div className="total_price">FCFA</div>
               </div>

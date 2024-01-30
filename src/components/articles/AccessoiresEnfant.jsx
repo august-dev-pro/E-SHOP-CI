@@ -2,7 +2,7 @@ import React from "react";
 import { GetDataFonction } from "../../fonctions/GetDataFonction";
 import Product from "../product/Product";
 
-const AccessoiresEnfant = () => {
+const AccessoiresEnfant = ({ openModal }) => {
   const ProductsData = GetDataFonction();
   const limitedProducts = ProductsData.slice(0, 8);
   return (
@@ -12,7 +12,7 @@ const AccessoiresEnfant = () => {
         <div className="accessoires_content content">
           {limitedProducts.map((product) => {
             {
-              return <Product {...product} />;
+              return <Product {...product} openModal={openModal} />;
             }
           })}
         </div>
