@@ -1,3 +1,6 @@
+build on vercel dashboard
+to show the page: [https://e-shop-ci.vercel.app/]
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
