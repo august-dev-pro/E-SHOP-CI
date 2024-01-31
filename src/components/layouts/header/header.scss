@@ -5,6 +5,10 @@
     display: none !important;
 }
 
+.aside-bar.hiddenm {
+    height: 0px;
+}
+
 #scroll-nav-bar {
     display: block;
     position: fixed !important;
@@ -99,6 +103,8 @@
     }
 
     .nav-bar {
+
+
         .nav_container {
             display: flex;
             gap: 200px;
@@ -184,6 +190,50 @@
 
 
             }
+
+            .aside-bar {
+                position: absolute;
+                height: fit-content;
+                width: 200px;
+                z-index: 1000;
+                background-color: #ff5e00;
+                border-bottom-left-radius: .5rem;
+                border-bottom-right-radius: .5rem;
+                overflow: hidden;
+                transition: all .5s;
+
+                .aside-bar_container {
+                    .aside-bar_content {
+                        text-align: left;
+
+
+                        .chield {
+                            .ch_container {
+                                width: 100%;
+                                padding: 5px 0;
+                                padding-left: 10px;
+                                transition: all .3s;
+
+                                span {
+                                    color: #fff;
+                                    width: max-content;
+                                }
+                            }
+                        }
+
+                        .ch_container:hover {
+                            background-color: #ffffff9f;
+
+
+                            span {
+                                color: #1f1d1d;
+                                font-weight: 500;
+                            }
+
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -256,6 +306,28 @@
 
                 .links {
                     display: none;
+                }
+
+                .aside-bar {
+                    width: 150px;
+                    right: 5%;
+
+                    .aside-bar_container {
+                        .aside-bar_content {
+                            .chield {
+                                .ch_container {
+                                    span {
+                                        font-weight: 300;
+                                        font-size: 15px;
+                                    }
+                                }
+                            }
+
+                            .ch_container:hover {
+                                span {}
+                            }
+                        }
+                    }
                 }
             }
         }

@@ -2,7 +2,6 @@ import {
   faLockOpen,
   faSearch,
   faShoppingCart,
-  faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
@@ -10,6 +9,8 @@ import { productSearch } from "../../../fonctions/productFonctions";
 import "./header.css";
 const Header = ({ updateSearchResults }) => {
   const handleScroll = () => {
+    const flexAsideBar = document.getElementById("flex-aside-bar");
+    const scrollAsideBar = document.getElementById("scroll-aside-bar");
     const flexNavBar = document.getElementById("flex-nav-bar");
     const scrollNavBar = document.getElementById("scroll-nav-bar");
 
@@ -20,15 +21,42 @@ const Header = ({ updateSearchResults }) => {
     // Mettez à jour la classe de scroll-nav-bar en fonction de la visibilité
     if (flexNavBar && isVisible) {
       scrollNavBar.classList.add("hidden");
+      scrollAsideBar.classList.add("hidden");
     } else {
       scrollNavBar.classList.remove("hidden");
+      flexAsideBar.classList.add("hidden");
     }
   };
 
+  /* mise a jour du aside bar */
+  const handleToggleAsideBar = (value) => {
+    const flexAsideBar = document.getElementById("flex-aside-bar");
+    const scrollAsideBar = document.getElementById("scroll-aside-bar");
+
+    if (value === 1) {
+      scrollAsideBar.classList.add("hidden");
+      flexAsideBar.classList.toggle("hidden");
+    }
+
+    if (value === 2) {
+      flexAsideBar.classList.add("hidden");
+      scrollAsideBar.classList.toggle("hidden");
+    }
+  };
+
+  /* useEffect de recuperation de données API et mise a jour de bar de nav */
   useEffect(() => {
+    //debut recuperer les données API
+    const fetchData = async () => {
+      const response = await fetch("https://fakestoreapi.com/products");
+      const data = await response.json();
+      setProducts(data);
+    };
+    fetchData();
+    //fin
+
     // Ajoutez l'écouteur d'événements sur le scroll
     window.addEventListener("scroll", handleScroll);
-
     // Retirez l'écouteur d'événements lors du démontage du composant
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -39,21 +67,13 @@ const Header = ({ updateSearchResults }) => {
   const [searchResults, setSearchResults] = useState([]);
   const [products, setProducts] = useState([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch("https://fakestoreapi.com/products");
-      const data = await response.json();
-      setProducts(data);
-    };
-
-    fetchData();
-  }, []);
-
+  /* use effect de recuperation des resultat de recherche */
   useEffect(() => {
     const results = productSearch(searchTerm, products);
     setSearchResults(results);
   }, [searchTerm, products]);
 
+  /* even d'ecoute de saisi de la zone de recherche */
   const handleSearchChange = (event) => {
     const term = event.target.value;
     setSearchTerm(term);
@@ -65,17 +85,18 @@ const Header = ({ updateSearchResults }) => {
   };
 
   return (
-    <header className="header">
+    <header id="header" className="header">
       <div className="bar">
-        COMMANDEZ RAPIDEMENT AU 07 09 49 84 28 || LIVRAISON EXPRESS LE MÊME JOUR
-        !
+        COMMANDEZ RAPIDEMENT AU 057 477 5889 || LIVRAISON EXPRESS LE MÊME JOUR !
       </div>
+
       <div className="header_content">
         <div className="content_container container">
           <div className="content">
             <a href="/" id="logo">
               E-SHOP CI
             </a>
+            {/* search form */}
             <div className="search_form">
               <input
                 type="search"
@@ -107,16 +128,60 @@ const Header = ({ updateSearchResults }) => {
           </div>
         </div>
       </div>
+
+      {/* flex nav bar */}
       <nav id="flex-nav-bar" className="nav-bar">
         <div className="nav_container container">
           <a href="/" id="logo1">
             E-SHOP CI
           </a>
-          <div className="biblio">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+          <div className="menu-deroule">
+            <div
+              onClick={() => handleToggleAsideBar(1)}
+              id="biblio flex-biblio"
+              className="biblio"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div className="aside-bar hidden" id="flex-aside-bar">
+              <div className="aside-bar_container">
+                <div className="aside-bar_content">
+                  <a href="#" className="chield">
+                    <div className="ch_container">
+                      <span>categories </span>
+                    </div>
+                  </a>
+                  <a href="#" className="chield">
+                    <div className="ch_container">
+                      <span>categories lorem</span>
+                    </div>
+                  </a>
+                  <a href="#" className="chield">
+                    <div className="ch_container">
+                      <span>categories lorem ipsum</span>
+                    </div>
+                  </a>
+                  <a href="#" className="chield">
+                    <div className="ch_container">
+                      <span>categories lorem</span>
+                    </div>
+                  </a>
+                  <a href="#" className="chield">
+                    <div className="ch_container">
+                      <span>categories</span>
+                    </div>
+                  </a>
+                  <a href="#" className="chield">
+                    <div className="ch_container">
+                      <span>categories</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="links">
             <div className="chield">
@@ -152,16 +217,56 @@ const Header = ({ updateSearchResults }) => {
           </div>
         </div>
       </nav>
+      {/* scroll nav bar */}
       <nav id="scroll-nav-bar" className="nav-bar">
         <div className="nav_container container">
           <a href="/" id="logo1">
             E-SHOP CI
           </a>
-          <div className="biblio">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+          {/* scroll bar menu deroule */}
+          <div className="menu-deroule">
+            <div onClick={() => handleToggleAsideBar(2)} className=" biblio">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div className="aside-bar hidden" id="scroll-aside-bar">
+              <div className="aside-bar_container">
+                <div className="aside-bar_content">
+                  <a href="#" className="chield">
+                    <div className="ch_container">
+                      <span>categories </span>
+                    </div>
+                  </a>
+                  <a href="#" className="chield">
+                    <div className="ch_container">
+                      <span>categories lorem</span>
+                    </div>
+                  </a>
+                  <a href="#" className="chield">
+                    <div className="ch_container">
+                      <span>categories ipsum</span>
+                    </div>
+                  </a>
+                  <a href="#" className="chield">
+                    <div className="ch_container">
+                      <span>categories lorem</span>
+                    </div>
+                  </a>
+                  <a href="#" className="chield">
+                    <div className="ch_container">
+                      <span>categories</span>
+                    </div>
+                  </a>
+                  <a href="#" className="chield">
+                    <div className="ch_container">
+                      <span>categories</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="links">
             <div className="chield">

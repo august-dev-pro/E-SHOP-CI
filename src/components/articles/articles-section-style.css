@@ -39,6 +39,12 @@
     font-size: 25px;
   }
   /* nos bons plans */
+  .nosBonPlan_section {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
   .nosBonPlan_section .section_tile {
     padding: 0 5%;
   }
@@ -97,6 +103,10 @@
   /* accessoitres pour enfants */
   .accessoires-enfant_section {
     padding: 0 5%;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
   }
   .accessoires-enfant_section .accessoires_container .accessoires_content {
     justify-content: center;
@@ -147,7 +157,13 @@
     padding: 3px 15px;
     font-size: 13px;
   }
-  /* nos bons plans */
+  /* search results show section */
+  .search_resultat-section {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
   .search_resultat-section .search_resultat_container {
     padding: 0;
   }

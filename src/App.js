@@ -5,7 +5,6 @@ import Header from "./components/layouts/header/Header";
 import HomePage from "./pages/home/HomePage";
 import Login from "./pages/user/Login";
 import Register from "./pages/user/Register";
-import "./modales";
 import { useState } from "react";
 
 function App() {

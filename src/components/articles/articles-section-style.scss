@@ -56,6 +56,11 @@
             padding: 0 5%;
         }
 
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+
         .nosBonPlan_container {
             padding: 0;
 
@@ -130,6 +135,10 @@
     /* accessoitres pour enfants */
     .accessoires-enfant_section {
         padding: 0 5%;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
 
         .accessoires_container {
             .accessoires_content {
@@ -200,8 +209,13 @@
         }
     }
 
-    /* nos bons plans */
+    /* search results show section */
     .search_resultat-section {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+
         .search_resultat_container {
             padding: 0;
 

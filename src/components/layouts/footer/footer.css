@@ -203,7 +203,7 @@
   color: #ff0000;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 400px) {
   .about_info-bottom {
     display: grid !important;
     grid-template-columns: repeat(2, auto);

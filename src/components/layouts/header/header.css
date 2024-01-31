@@ -4,6 +4,10 @@
   display: none !important;
 }
 
+.aside-bar.hiddenm {
+  height: 0px;
+}
+
 #scroll-nav-bar {
   display: block;
   position: fixed !important;
@@ -143,6 +147,39 @@
   width: 100%;
   background-color: #303030;
 }
+.header .nav-bar .nav_container .aside-bar {
+  position: absolute;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 200px;
+  z-index: 1000;
+  background-color: #ff5e00;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.header .nav-bar .nav_container .aside-bar .aside-bar_container .aside-bar_content {
+  text-align: left;
+}
+.header .nav-bar .nav_container .aside-bar .aside-bar_container .aside-bar_content .chield .ch_container {
+  width: 100%;
+  padding: 5px 0;
+  padding-left: 10px;
+  transition: all 0.3s;
+}
+.header .nav-bar .nav_container .aside-bar .aside-bar_container .aside-bar_content .chield .ch_container span {
+  color: #fff;
+  width: -moz-max-content;
+  width: max-content;
+}
+.header .nav-bar .nav_container .aside-bar .aside-bar_container .aside-bar_content .ch_container:hover {
+  background-color: rgba(255, 255, 255, 0.6235294118);
+}
+.header .nav-bar .nav_container .aside-bar .aside-bar_container .aside-bar_content .ch_container:hover span {
+  color: #1f1d1d;
+  font-weight: 500;
+}
 
 @media (max-width: 576px) {
   .container {
@@ -193,6 +230,14 @@
   }
   .header .nav-bar .nav_container .links {
     display: none;
+  }
+  .header .nav-bar .nav_container .aside-bar {
+    width: 150px;
+    right: 5%;
+  }
+  .header .nav-bar .nav_container .aside-bar .aside-bar_container .aside-bar_content .chield .ch_container span {
+    font-weight: 300;
+    font-size: 15px;
   }
 }
 @media ((min-width: 577px) and (max-width: 767px)) {
