@@ -40,16 +40,13 @@
   }
   /* nos bons plans */
   .nosBonPlan_section {
-    width: 95%;
+    width: 100%;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
   }
   .nosBonPlan_section .section_tile {
     padding: 0 2.5%;
-  }
-  .nosBonPlan_section .nosBonPlan_container {
-    padding: 0;
   }
   .nosBonPlan_section .nosBonPlan_container .nosBonPlan_content {
     justify-content: center;
@@ -58,11 +55,11 @@
     gap: 15px;
   }
   .nosBonPlan_section .nosBonPlan_container .nosBonPlan_content .article {
-    width: 150px;
+    width: 160px;
     border-radius: 0.2rem;
   }
   .nosBonPlan_section .nosBonPlan_container .nosBonPlan_content .article .image .img-content {
-    height: 110px;
+    height: 120px;
     padding: 5px;
   }
   .nosBonPlan_section .nosBonPlan_container .nosBonPlan_content .article .image .img-content img {
@@ -109,11 +106,11 @@
     gap: 10px !important;
   }
   .accessoires-enfant_section .accessoires_container .accessoires_content .article {
-    width: 150px;
+    width: 160px;
     border-radius: 0.2rem;
   }
   .accessoires-enfant_section .accessoires_container .accessoires_content .article .image .img-content {
-    height: 110px;
+    height: 120px;
     padding: 5px;
   }
   .accessoires-enfant_section .accessoires_container .accessoires_content .article .image .img-content img {
