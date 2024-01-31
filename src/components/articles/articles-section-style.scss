@@ -53,10 +53,10 @@
     /* nos bons plans */
     .nosBonPlan_section {
         .section_tile {
-            padding: 0 5%;
+            padding: 0 2.5%;
         }
 
-        width: 90%;
+        width: 95%;
         justify-content: center;
         align-items: center;
         margin: 0 auto;
@@ -68,15 +68,15 @@
                 justify-content: center;
                 display: grid;
                 grid-template-columns: repeat(2, auto);
-                gap: 18px;
+                gap: 15px;
 
                 .article {
-                    width: 170px;
+                    width: 150px;
                     border-radius: .2rem;
 
                     .image {
                         .img-content {
-                            height: 130px;
+                            height: 110px;
                             padding: 5px;
 
                             img {
@@ -86,17 +86,6 @@
                         }
                     }
 
-                    .image:hover {
-                        .img-content::after {
-                            background-color: #001f4d2a;
-                        }
-
-                        .img-content {
-                            .img {
-                                max-height: 200px !important;
-                            }
-                        }
-                    }
 
                     .descriptions {
                         text-align: center;
@@ -134,8 +123,8 @@
 
     /* accessoitres pour enfants */
     .accessoires-enfant_section {
-        padding: 0 5%;
-        width: 90%;
+        padding: 0 2.5%;
+        width: 95%;
         justify-content: center;
         align-items: center;
         margin: 0 auto;
@@ -148,12 +137,13 @@
                 gap: 10px !important;
 
                 .article {
-                    width: 170px;
+                    width: 150px;
                     border-radius: .2rem;
+
 
                     .image {
                         .img-content {
-                            height: 130px;
+                            height: 110px;
                             padding: 5px;
 
                             img {
@@ -163,17 +153,7 @@
                         }
                     }
 
-                    .image:hover {
-                        .img-content::after {
-                            background-color: #001f4d2a;
-                        }
 
-                        .img-content {
-                            .img {
-                                max-height: 200px !important;
-                            }
-                        }
-                    }
 
                     .descriptions {
                         text-align: center;

@@ -42,11 +42,11 @@
 /* news article sliders style */
 @media (max-width: 400px) {
   .article-slide-section .articles_slider .article {
-    width: 150px;
+    width: 140px;
     border-radius: 0.2rem;
   }
   .article-slide-section .articles_slider .article .image .img-content {
-    height: 120px;
+    height: 100px;
     padding: 5px;
   }
   .article-slide-section .articles_slider .article .image .img-content img {

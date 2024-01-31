@@ -40,13 +40,13 @@
   }
   /* nos bons plans */
   .nosBonPlan_section {
-    width: 90%;
+    width: 95%;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
   }
   .nosBonPlan_section .section_tile {
-    padding: 0 5%;
+    padding: 0 2.5%;
   }
   .nosBonPlan_section .nosBonPlan_container {
     padding: 0;
@@ -55,25 +55,19 @@
     justify-content: center;
     display: grid;
     grid-template-columns: repeat(2, auto);
-    gap: 18px;
+    gap: 15px;
   }
   .nosBonPlan_section .nosBonPlan_container .nosBonPlan_content .article {
-    width: 170px;
+    width: 150px;
     border-radius: 0.2rem;
   }
   .nosBonPlan_section .nosBonPlan_container .nosBonPlan_content .article .image .img-content {
-    height: 130px;
+    height: 110px;
     padding: 5px;
   }
   .nosBonPlan_section .nosBonPlan_container .nosBonPlan_content .article .image .img-content img {
     max-width: 100%;
     max-height: 100%;
-  }
-  .nosBonPlan_section .nosBonPlan_container .nosBonPlan_content .article .image:hover .img-content::after {
-    background-color: rgba(0, 31, 77, 0.1647058824);
-  }
-  .nosBonPlan_section .nosBonPlan_container .nosBonPlan_content .article .image:hover .img-content .img {
-    max-height: 200px !important;
   }
   .nosBonPlan_section .nosBonPlan_container .nosBonPlan_content .article .descriptions {
     text-align: center;
@@ -102,8 +96,8 @@
   }
   /* accessoitres pour enfants */
   .accessoires-enfant_section {
-    padding: 0 5%;
-    width: 90%;
+    padding: 0 2.5%;
+    width: 95%;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -115,22 +109,16 @@
     gap: 10px !important;
   }
   .accessoires-enfant_section .accessoires_container .accessoires_content .article {
-    width: 170px;
+    width: 150px;
     border-radius: 0.2rem;
   }
   .accessoires-enfant_section .accessoires_container .accessoires_content .article .image .img-content {
-    height: 130px;
+    height: 110px;
     padding: 5px;
   }
   .accessoires-enfant_section .accessoires_container .accessoires_content .article .image .img-content img {
     max-width: 100%;
     max-height: 100%;
-  }
-  .accessoires-enfant_section .accessoires_container .accessoires_content .article .image:hover .img-content::after {
-    background-color: rgba(0, 31, 77, 0.1647058824);
-  }
-  .accessoires-enfant_section .accessoires_container .accessoires_content .article .image:hover .img-content .img {
-    max-height: 200px !important;
   }
   .accessoires-enfant_section .accessoires_container .accessoires_content .article .descriptions {
     text-align: center;

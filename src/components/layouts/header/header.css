@@ -183,7 +183,7 @@
 
 @media (max-width: 576px) {
   .container {
-    padding: 0 5%;
+    padding: 0 2.5%;
   }
   .header .bar {
     font-size: 12px;
@@ -233,7 +233,7 @@
   }
   .header .nav-bar .nav_container .aside-bar {
     width: 150px;
-    right: 5%;
+    right: 2.5%;
   }
   .header .nav-bar .nav_container .aside-bar .aside-bar_container .aside-bar_content .chield .ch_container span {
     font-weight: 300;
