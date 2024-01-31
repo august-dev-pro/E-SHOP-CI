@@ -188,6 +188,8 @@
   .header .bar {
     font-size: 12px;
     font-weight: 400;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
   }
   .header .header_content .content_container .content {
     flex-direction: column;
