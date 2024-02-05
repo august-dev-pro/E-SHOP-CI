@@ -6,10 +6,10 @@ import HomePage from "./pages/home/HomePage";
 import Login from "./pages/user/Login";
 import Register from "./pages/user/Register";
 import { useState } from "react";
+import ShowProduct from "./components/product/ShowProduct";
 
 function App() {
   const [searchResults, setSearchResults] = useState([]);
-
   const updateSearchResults = (results) => {
     setSearchResults(results);
   };
@@ -25,6 +25,7 @@ function App() {
             element={<HomePage searchResults={searchResults} />}
           />
           <Route path="/register" exact element={<Register />} />
+          <Route path="/product/:productId" exact element={<ShowProduct />} />
           <Route path="/login" exact element={<Login />} />
         </Routes>
       </BrowserRouter>

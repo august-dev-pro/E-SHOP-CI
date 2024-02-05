@@ -1,11 +1,12 @@
 import {
-  faLockOpen,
   faSearch,
   faShoppingCart,
+  faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { productSearch } from "../../../fonctions/productFonctions";
+import SearchSucgestionsShow from "../../articles/SearchSucgestionsShow";
 import "./header.css";
 const Header = ({ updateSearchResults }) => {
   const handleScroll = () => {
@@ -80,8 +81,14 @@ const Header = ({ updateSearchResults }) => {
     const results = productSearch(term, products);
     setSearchResults(results);
     if (updateSearchResults && typeof updateSearchResults === "function") {
-      updateSearchResults(results);
     }
+  };
+
+  //vider le input
+  const searchRef = useRef();
+  const handleInputClear = () => {
+    setSearchTerm("");
+    searchRef.current.value = "";
   };
 
   return (
@@ -97,24 +104,39 @@ const Header = ({ updateSearchResults }) => {
               E-SHOP CI
             </a>
             {/* search form */}
-            <div className="search_form">
-              <input
-                type="search"
-                name="search"
-                id="search"
-                required
-                placeholder="rechercher..."
-                value={searchTerm}
-                onChange={handleSearchChange}
-              />
-              <button id="submit">
-                <FontAwesomeIcon icon={faSearch} />
-              </button>
+            <div className="search">
+              <div className="search_form">
+                <input
+                  type="search"
+                  name="search"
+                  id="search"
+                  required
+                  placeholder="rechercher..."
+                  ref={searchRef}
+                  value={searchTerm}
+                  onChange={handleSearchChange}
+                />
+                <button
+                  id="submit"
+                  onClick={() => {
+                    updateSearchResults(searchResults);
+                    handleInputClear();
+                  }}
+                >
+                  <FontAwesomeIcon icon={faSearch} />
+                </button>
+              </div>
+              {searchResults.length > 0 && (
+                <SearchSucgestionsShow
+                  setSearchTerm={setSearchTerm}
+                  results={searchResults}
+                />
+              )}
             </div>
             <div className="acunt-links">
               <a href="#" id="accunt-link">
                 <div className="icon">
-                  <FontAwesomeIcon icon={faLockOpen} />
+                  <FontAwesomeIcon icon={faUser} />
                 </div>
                 <span>connexion</span>
               </a>

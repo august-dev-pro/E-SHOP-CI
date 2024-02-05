@@ -40,30 +40,75 @@
                     font-size: 20px;
                 }
 
-                .search_form {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
+                .search {
+                    position: relative;
 
-                    #search {
-                        width: 500px;
-                        border: .5px solid rgb(214, 206, 206);
-                        border-right: none;
-                        padding-left: 30px;
-                        border-top-left-radius: .3rem;
-                        border-bottom-left-radius: .3rem;
-                        height: 40px;
+
+                    /* sucgestion modale */
+                    .succgestions_show-modale {
+                        position: absolute;
+                        z-index: 1000;
+                        left: 0;
+                        top: 100%;
+                        border: 1px solid #cccccc;
+                        border-top: none;
+                        background-color: #fff;
+                        border-bottom-left-radius: .5rem;
+                        border-bottom-right-radius: .5rem;
+                        padding-top: 0px;
+                        padding: 10px 20px;
+
+                        .modale_container {
+                            .modale_content {
+                                .succgest {
+                                    text-align: left;
+                                    width: fit-content;
+                                    cursor: pointer;
+                                    font-weight: 300;
+
+                                    span {
+                                        padding: 10px 0;
+                                        width: 100%
+                                    }
+
+                                }
+
+                                .succgest:hover {
+                                    color: #ff5e00;
+
+                                    span {
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                        }
                     }
 
-                    #submit {
-                        //background-color: orangered;
-                        border: none;
-                        width: 50px;
-                        border-top-right-radius: .3rem;
-                        border-bottom-right-radius: .3rem;
-                        border-top-left-radius: 0;
-                        border-bottom-left-radius: 0;
-                        height: 40px;
+                    .search_form {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+
+                        #search {
+                            width: 100%;
+                            border: .5px solid rgb(214, 206, 206);
+                            border-right: none;
+                            padding-left: 30px;
+                            border-top-left-radius: .3rem;
+                            border-bottom-left-radius: .3rem;
+                            height: 40px;
+                        }
+
+                        #submit {
+                            //background-color: orangered;
+                            border: none;
+                            width: 50px;
+                            border-top-right-radius: .3rem;
+                            border-bottom-right-radius: .3rem;
+                            border-top-left-radius: 0;
+                            border-bottom-left-radius: 0;
+                            height: 40px;
+                        }
                     }
                 }
 
@@ -196,11 +241,14 @@
                 height: fit-content;
                 width: 200px;
                 z-index: 1000;
-                background-color: #ff5e00;
+                background-color: #fff;
                 border-bottom-left-radius: .5rem;
                 border-bottom-right-radius: .5rem;
                 overflow: hidden;
                 transition: all .5s;
+                box-shadow: 0px 0px 3px 0px #808080;
+
+
 
                 .aside-bar_container {
                     .aside-bar_content {
@@ -215,18 +263,19 @@
                                 transition: all .3s;
 
                                 span {
-                                    color: #fff;
+                                    font-weight: 300;
+                                    color: #636363;
                                     width: max-content;
                                 }
                             }
                         }
 
                         .ch_container:hover {
-                            background-color: #ffffff9f;
+                            background-color: #0000001e;
 
 
                             span {
-                                color: #1f1d1d;
+                                color: #000;
                                 font-weight: 500;
                             }
 

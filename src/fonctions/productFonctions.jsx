@@ -27,13 +27,11 @@ export function productSearch(word, products) {
     return [];
   }
   const results = products.filter((product) => {
-    const productTitle = product.title.toLowerCase();
-    const description = product.description.toLowerCase();
+    const productCategory = product.category.toLowerCase();
+    //const description = product.description.toLowerCase();
     const searchWord = word.toLowerCase();
-
-    return (
-      productTitle.includes(searchWord) || description.includes(searchWord)
-    );
+    return productCategory.includes(searchWord);
+    /* || description.includes(searchWord) */
   });
 
   return results;

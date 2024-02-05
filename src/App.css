@@ -78,7 +78,9 @@ button {
   list-style: none;
   font-family: "Kanit", sans-serif !important;
 }
-
+input:focus {
+  outline: none;
+}
 img {
   max-width: 100%;
   height: auto;

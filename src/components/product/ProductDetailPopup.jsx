@@ -4,7 +4,7 @@ import { faShoppingCart, faTimes } from "@fortawesome/free-solid-svg-icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 const ProductDetailPopup = ({ product, closeModal }) => {
   if (!product || Object.keys(product).length === 0) {
-    return null; // ou un message de chargement
+    return null;
   }
   return (
     <article className="articlePop-up">
@@ -25,8 +25,10 @@ const ProductDetailPopup = ({ product, closeModal }) => {
               <div className="price-add">
                 <div className="price">{product.price}00 FCFA</div>
                 <button className="add-button">
+                  <span>Ajouter au panier</span>
                   <FontAwesomeIcon icon={faShoppingCart} />
                 </button>
+                <a href={`/product/${product.id}`}>voir +</a>
               </div>
             </div>
           </div>
